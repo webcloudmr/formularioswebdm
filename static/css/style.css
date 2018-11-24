@@ -1,0 +1,40 @@
+body{
+	background-color: f7f8f9;
+}
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.title{
+	color: #045FB4;
+	background-color: f7f8f9;
+	
+	
+	padding: 10px;
+}
+.bienvenida{
+	color: black;
+	background-color: #BBDEFB;
+	
+}
+.bienvenida .login{
+	padding-top: 20px;
+	
+}
+.boton {
+	color: #009688;
+	padding: 5px;
+
+}
+.post{
+	background-color: #ECEFF1;
+	padding: 10px;
+	margin: 2px;
+	margin-top: 5px;
+	border-radius: 10px;
+}
+.test{
+	color: black;
+	background-color: #FF0000;
