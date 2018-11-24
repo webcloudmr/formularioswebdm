@@ -1,0 +1,63 @@
+{% extends "0_Base.html" %}
+
+{% block content %}
+  <div class="row">
+
+             
+
+			 
+			<div class="row">
+				 <div class="boton col-md-12">
+      					  <div class="title col-md-12 text-center">
+						<h1><font face="Segoe UI" size="6">SOLICITUD EDILICIA</font></h1>
+						</div>
+      					  
+           			 		<p align="left">
+      					  					
+					
+					
+           			 
+      					  
+           			 </div>
+           			</div>
+					
+      <form method="post">
+		<div>
+		<br>
+        <label for="name">Nombre y Apellido:</label>
+        <input type="text" size="20" name="nombreyapellido" />
+		</div>
+		<div>
+		<br>
+        <label for="name">Sede:</label>
+        <input type="text" size="20" name="sede" />
+		</div>
+		<div>
+		<br>
+        <label for="name">Piso:</label>
+        <input type="text" size="20" name="piso" />
+		</div>
+		<div>
+		<br>
+        <label for="name">Detalle de Inconveniente:</label>
+		<input type="text" size="50" name="inconveniente" />
+        
+		</div>
+		
+			
+		
+		
+		
+        
+		
+		
+		<br>
+		<a href="/OperacionesHome" class="btn btn-primary">Volver</a>
+        <button action='/OperacionesEdilicias' type="submit" class="btn btn-primary"><font face="Segoe UI">Enviar</font></button>
+		
+      	
+		</font>
+      </form>
+    </div>
+  </div>
+{% endblock %}

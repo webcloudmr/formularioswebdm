@@ -1,0 +1,45 @@
+
+
+{% block content %} 
+
+  
+		<div class="row text-center">
+			<h2>Estas seguro que quiere borrar esta Solicitud?</h2>
+		</div>
+		<div class="row post">
+			<div class="col-md-3">
+				<h6><font color="#0000FF">APELLIDO Y NOMBRE</font></h6>
+				<h6>{{valores.nombreyapellido}}</h6>
+			</div>
+			<div class="col-md-1">
+				<h6><font color="#0000FF">DNI</font></h6>
+				<h6>{{valores.dni}}</h6>
+			</div>
+			<div class="col-md-3">
+				<h6><font color="#0000FF">CORREO</font></h6>
+				<h6>{{valores.correo}}</h6>
+			</div>
+			<div class="col-md-2">
+					<h6><font color="#0000FF">TELEFONO</font></h6>
+					<h6>{{valores.telefono}}</h6>
+				</div>
+				<div class="col-md-2">
+				<h6><font color="#0000FF">EVENTO</font></h6>
+				<h6>{{valores.evento}}</h6>
+				</div>
+				
+				
+        
+		</div>
+
+		<br>
+ 
+			<form action="/comercialactividades/eliminar/{{valores.id}}" method = 'post'>
+				<button type="submit" class="btn btn-danger" id="submit" type="submit">Yes</button>
+				<a class="btn btn-primary" href="/COMERCIALReportesInscripciones" role="button">No</a>
+			</form>   
+{% endblock %}
+
+
+
+

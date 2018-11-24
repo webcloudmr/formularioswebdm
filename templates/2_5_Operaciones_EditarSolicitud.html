@@ -1,0 +1,71 @@
+{% extends "0_1_Base_sinlogo.html" %}
+
+{% block content %}
+  <div class="row">
+
+             
+
+			 
+			<div class="row">
+				 <div class="boton col-md-12">
+      					  <div class="title col-md-12 text-center">
+						<h1><font face="Segoe UI" size="6">EDITAR SOLICITUD EDILICIA</font></h1>
+						</div>
+      					  
+           			 		<p align="left">
+      					  					
+					
+           			 
+      					  
+           			 </div>
+           			</div>
+      <form method="post">
+	     <div>
+			<br>
+			<label for="name">Nombre y Apellido:</label>
+			<input type="text" size="20" name="nombreyapellido" value='{{valores.nombreyapellido}}' />
+		</div>
+        <div>
+			<br>
+			<label for="name">Sede:</label>
+			<input type="text" size="20" name="sede" value='{{valores.sede}}'/>
+		</div>
+		<div>
+			<br>
+			<label for="name">Piso:</label>
+			<input type="text" size="20" name="piso" value='{{valores.piso}}'/>
+		</div>
+		<div>
+		<br>
+        <label for="name">Detalle de Inconveniente:</label>
+		<input type="text" size="50" name="inconveniente" value='{{valores.inconveniente}}'/>
+
+		</div>
+		<div>
+			<br>
+			<label for="name">Estado:</label>
+			<input type="text" size="20" name="estado" value='{{valores.estado}}'/>
+		</div>
+		<div>
+			<br>
+			<label for="name">Responsable:</label>
+			<input type="text" size="20" name="mantenimiento" value='{{valores.mantenimiento}}'/>
+		</div>
+		
+		
+		
+		
+		
+        
+        <p></p>	
+        <a href="/OperacionesEdiliciasReportes" class="btn btn-primary">Volver</a>
+					
+		<button action='/OperacionesEdiliciasEditar/editar/{{valores.id}}'type="submit" class="btn btn-primary"><font face="Segoe UI">Guardar</font></button>
+		      	
+
+      	</font>
+      	</p>
+      </form>
+    </div>
+  </div>
+{% endblock %}

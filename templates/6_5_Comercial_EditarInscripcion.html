@@ -1,0 +1,79 @@
+{% extends "0_1_Base_sinlogo.html" %}
+
+{% block content %} 
+
+<div class="row">
+
+
+			 
+			<div class="col-md-12">
+				 <div class="boton col-md-12">
+      					 <div class="title col-md-12 text-center">
+						<h1><font face="Segoe UI" size="6">EDITAR INSCRIPCION ACTIVIDADES</font></h1>
+						</div>
+      				
+						<br>
+						<br>
+      					  
+           			 </div>
+           			</div>
+      <form method="post">
+	  
+		
+			 <div>
+		<br>
+        <label for="name">Nombre y Apellido:</label>
+        <input type="text" size="20" value='{{valores.nombreyapellido}}' name="nombreyapellido" />
+		</div>
+			 <div>
+		<br>
+        <label for="name">DNI:</label>
+        <input type="text" size="10" value='{{valores.dni}}' name="dni" />
+		</div>
+
+			<div>
+		<br>
+        <label for="name">Correo:</label>
+        <input type="text" size="20" value='{{valores.correo}}' name="correo" />
+		</div>
+		
+			<div>
+		<br>
+        <label for="name">Telefono:</label>
+        <input type="text" size="10" value='{{valores.telefono}}' name="telefono" />
+		</div>
+		<div>
+		<br>
+		<label for="name">Eventos Disponibles:</label>
+        <select name="evento" value='{{valores.evento}}'>
+			<option value="Fiesta Fin de Año">Fiesta Fin de Año</option>
+  			<option value="Egreso Residentes">Egreso Residentes</option>
+  			<option value="Charla Informativa Ingreso Residentes 2019">Ingreso Residentes 2019</option>
+			<option value="4K Carrera DM 08/12/2018">4K Carrera DM 08/12/2018</option>
+		</select></p>
+        </div>
+		<div>
+		
+        <label for="name">Estado:</label>
+        <input type="text" size="20" value='{{valores.estado}}' name="estado" />
+		</div>
+		<br>
+		<a href="/COMERCIALReportesInscripciones" class="btn btn-primary">Volver</a>
+        <button type="submit" class="btn btn-primary"><font face="Segoe UI">Guardar</font></button>
+		
+      	
+		</font>
+      </form>
+    </div>
+
+  
+		
+
+		<br>
+ 
+			 
+{% endblock %}
+
+
+
+

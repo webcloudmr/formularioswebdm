@@ -1,0 +1,97 @@
+{% extends "0_1_Base_sinlogo.html" %}
+
+{% block content %}
+ 
+
+             
+
+			 
+			<div class="row">
+				 <div class="boton col-md-12">
+      					  <div class="title col-md-12 text-center">
+						<h1><font face="Segoe UI" size="6">EDITAR SOLICITUD VACACIONES</font></h1>
+						</div>
+      					  
+           			 		<p align="left">
+      					  					
+					
+					
+           			 
+      					  
+           			 </div>
+           			</div>
+      <form method="post">
+        
+		<div>
+		<br>
+        <label for="name">Tipo:</label>
+		<select name="tipo" value='{{valores.tipo}}'>
+			<option value="Anuales">Anuales</option>
+  			<option value="Pendientes">Pendientes</option>
+  			<option value="Adelantadas">Adelantadas</option>
+		</select>
+        </div>
+		
+		<div>
+		<br>
+        <label for="name">Nombre y Apellido:</label>
+        <input type="text" size="20" value='{{valores.nombreyapellido}}' name="nombreyapellido" />
+		</div>
+		
+		<div>
+		<br>
+        <label for="name">Legajo:</label>
+        <input type="text" size="20" value='{{valores.legajo}}' name="legajo" />
+		</div>
+		
+		
+		<div>
+		<br>
+        <label for="name">Dias:</label>
+        <input type="text" size="20" value='{{valores.cantidaddias}}' name="cantidaddias" />
+		</div>
+			
+        
+		<div>
+		<br>
+        <label for="name">Fecha Comienzo:</label>
+        <input type="date" size="20" value='{{valores.fechacomienzo}}' name="fechacomienzo" />
+		</div>
+		
+		<div>
+		<br>
+        <label for="name">Fecha Finalizacio:</label>
+        <input type="date" size="20" value='{{valores.fechafinalizacion}}' name="fechafinalizacion" />
+		</div>
+		
+		<div>
+		<br>
+        <label for="name">Fecha de Reinicio:</label>
+        <input type="date" size="20" value='{{valores.fechareinicio}}' name="fechareinicio" />
+		</div>
+		
+		<div>
+		<br>
+        <label for="name">Supervisor:</label>
+        <input type="text" size="20" value='{{valores.nombreyapellidosup}}' name="nombreyapellidosup" />
+		</div>
+		<div>
+		<br>
+        <label for="name">Estado:</label>
+        <input type="text" size="20" value='{{valores.estado}}' name="estado" />
+		</div>
+		
+		
+		
+        
+        <p></p>	
+        <a href="/RRHHHome" class="btn btn-primary">Volver</a>
+		<button action='/rrhhvacaciones/editar/{{valores.id}}'type="submit" class="btn btn-primary"><font face="Segoe UI">Guardar</font></button>
+		      	
+
+      	</font>
+      	</p>
+      </form>
+    
+  
+{% endblock %}

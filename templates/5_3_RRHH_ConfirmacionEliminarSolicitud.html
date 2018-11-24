@@ -1,0 +1,61 @@
+{% extends "0_1_Base_sinlogo.html" %}
+
+{% block content %} 
+
+  
+		<div class="row text-center">
+			<h2>Estas seguro que quiere borrar esta Solicitud?</h2>
+		</div>
+		<div class="row post">
+      
+	  <div class="col-md-1">
+	  <h6><font color="#0000FF">TIPO</font></h6>
+	  <h6>{{valores.tipo}}</h6>
+      </div>
+	  <div class="col-md-2">
+	  <h6><font color="#0000FF">NOMBRE Y APELLIDO</font></h6>
+	  <h6>{{valores.nombreyapellido}}</h6>
+      </div>
+	  <div class="col-md-1">
+	  <h6><font color="#0000FF">LEGAJO</font></h6>
+	   <h6>{{valores.legajo}}</h6>
+		</div>
+	  <div class="col-md-1">
+	  <h6><font color="#0000FF">DIAS</font></h6>
+	  <h6>{{valores.cantidaddias}}</h6>
+		</div>
+		<div class="col-md-1">
+	  <h6><font color="#0000FF">FECHA COMIENZO</font></h6>
+	   <h6>{{valores.fechacomienzo}}</h6>
+		</div>
+		<div class="col-md-1">
+	  <h6><font color="#0000FF">FECHA FINALIZACION</font></h6>
+	  <h6>{{valores.fechafinalizacion}}</h6>
+		</div>
+		<div class="col-md-1">
+	  <h6><font color="#0000FF">FECHA REINICIO</font></h6>
+	  <h6>{{valores.fechareinicio}}</h6>
+		</div>
+		<div class="col-md-2">
+	  <h6><font color="#0000FF">SUPERVISOR</font></h6>
+	  <h6>{{valores.nombreyapellidosup}}</h6>
+		</div>
+		<div class="col-md-1">
+	  <h6><font color="#0000FF">ESTADO</font></h6>
+	  <h6>{{valores.estado}}</h6>
+		</div>
+	  
+		
+		</div>
+
+		<br>
+ 
+			<form action="/rrhhvacaciones/eliminar/{{valores.id}}" method = 'post'>
+				<button type="submit" class="btn btn-danger" id="submit" type="submit">Yes</button>
+				<a class="btn btn-primary" href="/RRHHReportesVacaciones" role="button">No</a>
+			</form>   
+{% endblock %}
+
+
+
+

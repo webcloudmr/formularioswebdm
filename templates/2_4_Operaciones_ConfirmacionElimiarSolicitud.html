@@ -1,0 +1,44 @@
+{% extends "0_1_Base_sinlogo.html" %}
+
+{% block content %} 
+
+  
+		<div class="row text-center">
+			<h2>Estas seguro que quiere borrar esta Solicitud?</h2>
+		</div>
+		<div class="row post">
+			<div class="col-md-3">
+				<h6><font color="#0000FF">NOMBRE Y APELLIDO</font></h6>
+				<h6>{{valores.nombreyapellido}}</h6>
+			</div>
+			<div class="col-md-2">
+				<h6><font color="#0000FF">SEDE</font></h6>
+				<h6>{{valores.sede}}</h6>
+			</div>
+			<div class="col-md-2">
+				<h6><font color="#0000FF">PISO</font></h6>
+				<h6>{{valores.piso}}</h6>
+			</div>
+			<div class="col-md-3">
+					<h6><font color="#0000FF">INCONVENIENTE</font></h6>
+					<h6>{{valores.inconveniente}}</h6>
+				</div>
+				<div class="col-md-1">
+					<h6><font color="#0000FF">ESTADO</font></h6>
+					<h6>{{valores.estado}}</h6>
+				</div>
+				
+        
+		</div>
+
+		<br>
+ 
+			<form action="/OperacionesEdiliciasEliminar/eliminar/{{valores.id}}" method = 'post'>
+				<button type="submit" class="btn btn-danger" id="submit" type="submit">Yes</button>
+				<a class="btn btn-primary" href="/OperacionesEdiliciasReportes" role="button">No</a>
+			</form>   
+{% endblock %}
+
+
+
+

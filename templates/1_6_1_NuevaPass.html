@@ -1,0 +1,46 @@
+{% extends "0_Base.html" %}
+
+{% block content %}
+  <div class="row">
+
+             
+
+			 
+			<div class="row">
+				 <div class="boton col-md-12">
+      					  <div class="title col-md-12 text-center">
+						<h1><font face="Segoe UI" size="6">CAMBIAR CONTRASEÑA</font></h1>
+						</div>
+      					  
+           			 		<p align="left">
+      					  					
+					<a href="/PerfilUsuario" class="btn btn-primary">Volver</a>
+					
+           			 
+      					  
+           			 </div>
+           			</div>
+      <form method="post">
+	     <div>
+			<br>
+			<label for="password">Contraseña Nueva:</label>
+			<input type="password" size="20" name="password" />
+		</div>
+       >
+		
+		
+		
+		
+		
+        
+        <p></p>	
+        
+		<button action='/OperacionesEdiliciasEditar/editar/{{valores.id}}'type="submit" class="btn btn-primary"><font face="Segoe UI">Guardar Cambios</font></button>
+		      	
+
+      	</font>
+      	</p>
+      </form>
+    </div>
+  </div>
+{% endblock %}

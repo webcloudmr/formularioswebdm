@@ -1,0 +1,56 @@
+{% extends "0_1_Base_sinlogo.html" %}
+{% block content %} 
+
+  
+		<div class="row">
+				 <div class="boton col-md-12">
+      					  <div class="title col-md-12 text-center">
+						<h1><font face="Segoe UI" size="6">CONFIRMA ELIMINAR SOLICITUD DIA DE ESTUDIO</font></h1>
+						</div>
+      					  
+           			 		<p align="left">
+      					  					
+					
+					
+           			 
+      					  
+           			 </div>
+           			</div>
+		<div class="row post">
+			<div class="col-md-3">
+				<h6><font color="#0000FF">NOMBRE Y APELLIDO</font></h6>
+				<h6>{{valores.nombreyapellido}}</h6>
+			</div>
+			<div class="col-md-2">
+				<h6><font color="#0000FF">LEGAJO</font></h6>
+				<h6>{{valores.legajo}}</h6>
+			</div>
+			<div class="col-md-3">
+				<h6><font color="#0000FF">METERIA</font></h6>
+				<h6>{{valores.materia}}</h6>
+			</div>
+			<div class="col-md-3">
+					<h6><font color="#0000FF">FECHA</font></h6>
+					<h6>{{valores.fecha}}</h6>
+				</div>
+				<div class="col-md-1">
+					<h6><font color="#0000FF">ESTADO</font></h6>
+					<h6>{{valores.estado}}</h6>
+				</div>
+				
+				
+				
+        
+		</div>
+
+		<br>
+ 
+			<form action="/rrhhdiaestudio/eliminar/{{valores.id}}" method = 'post'>
+				<button type="submit" class="btn btn-danger" id="submit" type="submit">Yes</button>
+				<a class="btn btn-primary" href="/RRHHReportesDiaDeEstudio" role="button">No</a>
+			</form>   
+{% endblock %}
+
+
+
+

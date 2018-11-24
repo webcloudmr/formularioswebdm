@@ -1,0 +1,89 @@
+{% extends "0_Base.html" %}
+
+{% block content %}
+ 
+<div class="row">
+             
+
+			 
+			<div class="row">
+				 <div class="boton col-md-12">
+      					  <div class="title col-md-12 text-center">
+						<h1><font face="Segoe UI" size="6">SOLICITUD VACACIONES</font></h1>
+						</div>
+      					  
+           			 		<p align="left">
+      					  					
+					
+					
+           			 
+      					  
+           			 </div>
+           			</div>
+      <form method="post">
+	  <div>
+		<br>
+        <label for="name">Fecha:</label>
+        <input type="date" size="15" name="fecha_solicitud" />
+		</div>
+		<div>
+		<br>
+        <label for="name">Tipo:</label>
+		<select name="tipo">
+			<option value="Anuales">Anuales</option>
+  			<option value="Pendientes">Pendientes</option>
+  			<option value="Adelantadas">Adelantadas</option>
+		</select>
+        </div>
+	    <div>
+		<br>
+        <label for="name">Nombre y Apellido:</label>
+        <input type="text" size="20" name="nombreyapellido" />
+		</div>
+		<div>
+		<br>
+        <label for="name">Legajo:</label>
+        <input type="text" size="20" name="legajo" />
+		</div>
+		<div>
+		<br>
+        <label for="name">Cantidad de Dias:</label>
+        <input type="text" size="20" name="cantidaddias" />
+		</div>
+		<div>
+		<br>
+        <label for="name">Fecha Comienzo:</label>
+        <input type="date" size="20" name="fechacomienzo" />
+		</div>
+		<div>
+		<br>
+        <label for="name">Fecha Finalizacio:</label>
+        <input type="date" size="20" name="fechafinalizacion" />
+		</div>
+		<div>
+		<br>
+        <label for="name">Fecha de Reinicio:</label>
+        <input type="date" size="20" name="fechareinicio" />
+		</div>
+		<div>
+		<br>
+        <label for="name">Supervisor:</label>
+        <input type="text" size="20" name="nombreyapellidosup" />
+		</div>
+		
+        
+		
+        
+       
+        <br>
+		
+      <a href="/RRHHHome" class="btn btn-primary">Volver</a>
+        <button type="submit" class="btn btn-primary"><font face="Segoe UI">Solicitar</font></button>
+		      	
+
+      	</font>
+      	</p>
+      </form>
+    
+  </div>
+{% endblock %}

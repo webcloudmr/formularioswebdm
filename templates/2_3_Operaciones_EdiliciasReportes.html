@@ -1,0 +1,83 @@
+{% extends "0_Base.html" %}
+
+{% block content %}
+
+					
+         
+
+			 
+			<div class="row">
+				 <div class="boton col-md-12">
+      					  <div class="title col-md-12 text-center">
+						<h1><font face="Segoe UI" size="6">REPORTES SOLICITUDES EDILICIAS</font></h1>
+						</div>
+						<a href="/OperacionesHome" class="btn btn-primary">Volver</a>
+  
+           			 </div>
+           			</div> 
+      
+       <div class="row post">
+      <div class="col-md-3">
+      	<h6><font color="#0000FF">NOMBRE Y APELLIDO</font></h6>
+      </div>
+	  <div class="col-md-1">
+	  <h6><font color="#0000FF">SEDE</font></h6>
+      </div>
+	  <div class="col-md-1">
+	  <h6><font color="#0000FF">PISO</font></h6>
+      </div>
+	  <div class="col-md-4">
+	  <h6><font color="#0000FF">INCONVENIENTE</font></h6>
+      </div>
+	  <div class="col-md-1">
+	  <h6><font color="#0000FF">ESTADO</font></h6>
+      </div>
+	  <div class="col-md-2">
+	  <h6><font color="#0000FF">RESPONSABLE</font></h6>
+      </div>
+
+       
+		
+      
+	  
+      
+        
+	
+    </div>
+
+  {% for operacionesedilicias in valores %}
+    <div class="row post">
+      <div class="col-md-3">
+        <h6>{{operacionesedilicias.nombreyapellido}}</h6>
+      </div>
+	  <div class="col-md-1">
+        <h6>{{operacionesedilicias.sede}}</h6>
+      </div>
+	  <div class="col-md-1">
+        <h6>{{operacionesedilicias.piso}}</h6>
+      </div>
+	  <div class="col-md-4">
+        <h6>{{operacionesedilicias.inconveniente}}</h6>
+      </div>
+	  <div class="col-md-1">
+        <h6>{{operacionesedilicias.estado}}</h6>
+      </div>
+	  <div class="col-md-2">
+        <h6>{{operacionesedilicias.mantenimiento}}</h6>
+      </div>
+	  
+       
+		
+      <div class="col-md-12 acciones">
+		<a href="/OperacionesEdiliciasEditar/editar/{{operacionesedilicias.id}}"><i class="fa fa-edit fa-fw"></i></a>
+        <a href="/OperacionesEdiliciasEliminar/eliminar/{{operacionesedilicias.id}}"><i class="fa fa-trash-o fa-fw"></i></a>
+        
+      </div>
+	  
+      
+        
+	
+    </div>
+	
+  {% endfor%}
+{% endblock %}

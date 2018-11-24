@@ -1,0 +1,67 @@
+{% extends "0_Base.html" %}
+
+{% block content %}
+ 
+
+			 
+			<div class="row">
+				 <div class="boton col-md-12">
+      					  <div class="title col-md-12 text-center">
+						<h1><font face="Segoe UI" size="6">REPORTES DIAS DE ESTUDIO</font></h1>
+						</div>
+						<a href="/RRHHHome" class="btn btn-primary">Volver</a>
+  
+           			 </div>
+           			</div> 
+      <div class="row post">
+      <div class="col-md-3">
+      	<h6><font color="#0000FF">NOMBRE Y APELLIDO</font></h6>
+      </div>
+	  <div class="col-md-2">
+	  <h6><font color="#0000FF">LEGAJO</font></h6>
+      </div>
+	  <div class="col-md-3">
+	  <h6><font color="#0000FF">MATERIA</font></h6>
+      </div>
+	  
+	  <div class="col-md-3">
+	  <h6><font color="#0000FF">FECHA</font></h6>
+      </div> 
+	  <div class="col-md-1">
+	  <h6><font color="#0000FF">ESTADO</font></h6>
+      </div> 
+        
+	
+    </div>
+      
+
+  {% for rrhhdiaestudio in valores %}
+    <div class="row post">
+      <div class="col-md-3">
+        <h6>{{rrhhdiaestudio.nombreyapellido}}</h6>
+      </div>
+	  <div class="col-md-2">
+        <h6>{{rrhhdiaestudio.legajo}}</h6>
+      </div>
+	  <div class="col-md-3">
+        <h6>{{rrhhdiaestudio.materia}}</h6>
+      </div>
+	  <div class="col-md-3">
+        <h6>{{rrhhdiaestudio.fecha}}</h6>
+      </div>
+	  <div class="col-md-1">
+        <h6>{{rrhhdiaestudio.estado}}</h6>
+      </div>
+       
+      
+      
+	  
+      <div class="col-md-12 acciones">
+		<a href="/rrhhdiaestudio/editar/{{rrhhdiaestudio.id}}"><i class="fa fa-pencil fa-fw"></i></a>
+        <a href="/rrhhdiaestudio/eliminar/{{rrhhdiaestudio.id}}"><i class="fa fa-trash-o fa-fw"></i></a>
+        
+      </div>
+       </div> 
+    
+  {% endfor%}
+{% endblock %}x|
